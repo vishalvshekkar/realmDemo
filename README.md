@@ -1,2 +1,2 @@
 # realmDemo
-A Demo Project showcasing Realm
+A Demo Project showcasing Realm in Swift

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BFCBD0B94EE3FFF53B2009B1786A5EBC6CE5CAEE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0D5BCA77A7A7FDBF29B848B7312559FC5602A893" : 0,
+    "BFCBD0B94EE3FFF53B2009B1786A5EBC6CE5CAEE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "56354256-B17C-4093-8302-42FAD5AF7B94",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0D5BCA77A7A7FDBF29B848B7312559FC5602A893" : "",
+    "BFCBD0B94EE3FFF53B2009B1786A5EBC6CE5CAEE" : "realmDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RealmDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RealmDemo\/RealmDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/vishalvshekkar\/vishal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0D5BCA77A7A7FDBF29B848B7312559FC5602A893"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vishalvshekkar\/realmDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFCBD0B94EE3FFF53B2009B1786A5EBC6CE5CAEE"
+    }
+  ]
+}

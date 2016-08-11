@@ -13,6 +13,7 @@ class Contact: Object {
     
     dynamic var firstName = ""
     dynamic var lastName = ""
+    dynamic var imageURL: String? = nil
     dynamic var address = ""
     dynamic var age: Int16 = 0
     

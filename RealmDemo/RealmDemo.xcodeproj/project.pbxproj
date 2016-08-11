@@ -15,6 +15,9 @@
 		C9310E131D5B757100561C3A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9310E101D5B757100561C3A /* RealmSwift.framework */; };
 		C9310E141D5B757100561C3A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9310E101D5B757100561C3A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9310E181D5B76CA00561C3A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9310E171D5B76CA00561C3A /* Contact.swift */; };
+		C958AABA1D5C5C810097ED08 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958AAB91D5C5C810097ED08 /* ContactDetailViewController.swift */; };
+		C958AABC1D5C5ED00097ED08 /* StoryboardIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958AABB1D5C5ED00097ED08 /* StoryboardIdentity.swift */; };
+		C958AAD01D5C87010097ED08 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958AACF1D5C87010097ED08 /* AnimationController.swift */; };
 		C98803091D588AF000DC208E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98803081D588AF000DC208E /* AppDelegate.swift */; };
 		C988030E1D588AF100DC208E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C988030C1D588AF100DC208E /* Main.storyboard */; };
 		C98803101D588AF100DC208E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C988030F1D588AF100DC208E /* Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		C9310E0F1D5B757100561C3A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C9310E101D5B757100561C3A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		C9310E171D5B76CA00561C3A /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		C958AAB91D5C5C810097ED08 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		C958AABB1D5C5ED00097ED08 /* StoryboardIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentity.swift; sourceTree = "<group>"; };
+		C958AACF1D5C87010097ED08 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		C98803051D588AEF00DC208E /* RealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98803081D588AF000DC208E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C988030D1D588AF100DC208E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,9 +140,12 @@
 				C98803081D588AF000DC208E /* AppDelegate.swift */,
 				C98803361D58912600DC208E /* ContactsView.swift */,
 				C9310E0B1D5B67F300561C3A /* ContactsViewController.swift */,
+				C958AABB1D5C5ED00097ED08 /* StoryboardIdentity.swift */,
 				C9310E171D5B76CA00561C3A /* Contact.swift */,
 				C9310E0D1D5B6E5D00561C3A /* Constants.swift */,
 				C988030C1D588AF100DC208E /* Main.storyboard */,
+				C958AACF1D5C87010097ED08 /* AnimationController.swift */,
+				C958AAB91D5C5C810097ED08 /* ContactDetailViewController.swift */,
 				C988030F1D588AF100DC208E /* Assets.xcassets */,
 				C98803111D588AF100DC208E /* LaunchScreen.storyboard */,
 				C98803141D588AF100DC208E /* Info.plist */,
@@ -314,8 +323,11 @@
 				C9310E181D5B76CA00561C3A /* Contact.swift in Sources */,
 				C9310E0E1D5B6E5D00561C3A /* Constants.swift in Sources */,
 				C98803091D588AF000DC208E /* AppDelegate.swift in Sources */,
+				C958AABA1D5C5C810097ED08 /* ContactDetailViewController.swift in Sources */,
 				C9310E0C1D5B67F300561C3A /* ContactsViewController.swift in Sources */,
 				C98803371D58912600DC208E /* ContactsView.swift in Sources */,
+				C958AAD01D5C87010097ED08 /* AnimationController.swift in Sources */,
+				C958AABC1D5C5ED00097ED08 /* StoryboardIdentity.swift in Sources */,
 				C9310E0A1D5B66F000561C3A /* ContactsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

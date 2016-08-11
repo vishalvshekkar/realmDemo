@@ -25,7 +25,7 @@ class ContactsTableViewCell: UITableViewCell {
     override func setHighlighted(highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
         if highlighted {
-            self.backgroundColor = UIColor(colorType: .PinkishRedWithLowerAlpha)
+            self.backgroundColor = UIColor(colorType: .PinkishRedWith15Alpha)
         } else {
             self.backgroundColor = UIColor.clearColor()
         }

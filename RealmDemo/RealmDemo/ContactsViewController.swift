@@ -17,15 +17,21 @@ class ContactsViewController: UIViewController {
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     let realm = try! Realm()
-    var contacts: Results<Contact> = { () -> Results<Contact> in
-        var contacts: Results<Contact>
-        if self.segmentControl.selectedSegmentIndex == 0 {
-            contacts = self.realm.objects(Contact.self)
-        } else {
-            contacts = self.realm
+    var contacts: Results<Contact>
+    
+    required init?(coder aDecoder: NSCoder) {
+        contacts = realm.objects(Contact.self).sorted("firstName", ascending: true)
+        super.init(coder: aDecoder)
+        
+    }
+    
+    private func fetchAndUpdateContacts() {
+        var parameterToSortBasedOn = "lastName"
+        if let selectedIndex = segmentControl?.selectedSegmentIndex where selectedIndex == 1 {
+            parameterToSortBasedOn = "firstName"
         }
-        return contacts
-    }()
+        contacts = realm.objects(Contact.self).sorted(parameterToSortBasedOn, ascending: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +42,7 @@ class ContactsViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        var
+        
         
     }
     
@@ -50,13 +56,21 @@ extension TableViewHandling: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let contactsCell = tableView.dequeueReusableCellWithIdentifier("contactsCell", forIndexPath: indexPath) as? ContactsTableViewCell
-        contactsCell?.leftImageView?.backgroundColor = UIColor.darkGrayColor()
         contactsCell?.otherLabel.text = "\(indexPath.row)\(indexPath.row)\(indexPath.row)\(indexPath.row)\(indexPath.row)\(indexPath.row)\(indexPath.row)\(indexPath.row)"
         return contactsCell ?? UITableViewCell()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        if let detailVC: ContactDetailViewController = UIStoryboard.StoryboardType.Main.instantiateViewController() {
+//            detailVC.contactDetails = contacts[indexPath.row]
+            self.navigationController?.presentViewController(detailVC, animated: true, completion: {
+                //Transition Completed
+            })
+            CFRunLoopWakeUp(CFRunLoopGetCurrent())
+            // http://stackoverflow.com/questions/21075540/presentviewcontrolleranimatedyes-view-will-not-appear-until-user-taps-again
+            //
+        }
     }
     
 }

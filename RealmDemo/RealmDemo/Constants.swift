@@ -16,15 +16,18 @@ extension UIColor {
     
     enum ColorType {
         case PinkishRed
-        case PinkishRedWithLowerAlpha
+        case PinkishRedWith15Alpha
+        case PinkishRedWith30Alpha
     }
     
     convenience init(colorType: ColorType) {
         switch colorType {
         case .PinkishRed:
             self.init(red: 1, green: 14.0/255.0, blue: 76.0/255.0, alpha: 1.0)
-        case .PinkishRedWithLowerAlpha:
+        case .PinkishRedWith15Alpha:
             self.init(red: 1, green: 14.0/255.0, blue: 76.0/255.0, alpha: 0.15)
+        case .PinkishRedWith30Alpha:
+            self.init(red: 1, green: 14.0/255.0, blue: 76.0/255.0, alpha: 0.30)
         default:
             self.init(red: 1, green: 1, blue: 1, alpha: 1.0)
         }

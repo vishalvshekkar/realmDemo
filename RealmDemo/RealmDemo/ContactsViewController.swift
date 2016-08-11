@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 private typealias TableViewHandling = ContactsViewController
 private typealias TargetMethods = ContactsViewController
@@ -15,12 +16,28 @@ class ContactsViewController: UIViewController {
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    let realm = try! Realm()
+    var contacts: Results<Contact> = { () -> Results<Contact> in
+        var contacts: Results<Contact>
+        if self.segmentControl.selectedSegmentIndex == 0 {
+            contacts = self.realm.objects(Contact.self)
+        } else {
+            contacts = self.realm
+        }
+        return contacts
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let rightButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ContactsViewController.rightBarButtonTapped(_:)))
         rightButton.tintColor = UIColor(colorType: .PinkishRed)
         self.navigationItem.rightBarButtonItem = rightButton
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        var
+        
     }
     
 }

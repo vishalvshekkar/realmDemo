@@ -25,6 +25,8 @@
 		C988031E1D588AF100DC208E /* RealmDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988031D1D588AF100DC208E /* RealmDemoTests.swift */; };
 		C98803291D588AF100DC208E /* RealmDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98803281D588AF100DC208E /* RealmDemoUITests.swift */; };
 		C98803371D58912600DC208E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98803361D58912600DC208E /* ContactsView.swift */; };
+		C9900A421D62ACDD0079BEA2 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9900A411D62ACDD0079BEA2 /* AddContactViewController.swift */; };
+		C9900A441D62BA620079BEA2 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9900A431D62BA620079BEA2 /* ContactsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		C98803281D588AF100DC208E /* RealmDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDemoUITests.swift; sourceTree = "<group>"; };
 		C988032A1D588AF100DC208E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98803361D58912600DC208E /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		C9900A411D62ACDD0079BEA2 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		C9900A431D62BA620079BEA2 /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +144,14 @@
 				C98803081D588AF000DC208E /* AppDelegate.swift */,
 				C98803361D58912600DC208E /* ContactsView.swift */,
 				C9310E0B1D5B67F300561C3A /* ContactsViewController.swift */,
+				C9900A411D62ACDD0079BEA2 /* AddContactViewController.swift */,
 				C958AABB1D5C5ED00097ED08 /* StoryboardIdentity.swift */,
 				C9310E171D5B76CA00561C3A /* Contact.swift */,
 				C9310E0D1D5B6E5D00561C3A /* Constants.swift */,
 				C988030C1D588AF100DC208E /* Main.storyboard */,
 				C958AACF1D5C87010097ED08 /* AnimationController.swift */,
 				C958AAB91D5C5C810097ED08 /* ContactDetailViewController.swift */,
+				C9900A431D62BA620079BEA2 /* ContactsManager.swift */,
 				C988030F1D588AF100DC208E /* Assets.xcassets */,
 				C98803111D588AF100DC208E /* LaunchScreen.storyboard */,
 				C98803141D588AF100DC208E /* Info.plist */,
@@ -325,9 +331,11 @@
 				C98803091D588AF000DC208E /* AppDelegate.swift in Sources */,
 				C958AABA1D5C5C810097ED08 /* ContactDetailViewController.swift in Sources */,
 				C9310E0C1D5B67F300561C3A /* ContactsViewController.swift in Sources */,
+				C9900A421D62ACDD0079BEA2 /* AddContactViewController.swift in Sources */,
 				C98803371D58912600DC208E /* ContactsView.swift in Sources */,
 				C958AAD01D5C87010097ED08 /* AnimationController.swift in Sources */,
 				C958AABC1D5C5ED00097ED08 /* StoryboardIdentity.swift in Sources */,
+				C9900A441D62BA620079BEA2 /* ContactsManager.swift in Sources */,
 				C9310E0A1D5B66F000561C3A /* ContactsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

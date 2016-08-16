@@ -13,6 +13,7 @@ class ContactDetailViewController: UIViewController, StoryboardIdentity {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstNameLabel: UITextField!
     @IBOutlet weak var lastNameLabel: UITextField!
+    @IBOutlet weak var addressLabel: UITextField!
     var contactDetails: Contact?
     
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class ContactDetailViewController: UIViewController, StoryboardIdentity {
         if let contactDetails = contactDetails {
             firstNameLabel.text = contactDetails.firstName
             lastNameLabel.text = contactDetails.lastName
+            addressLabel.text = contactDetails.address
         }
     }
 

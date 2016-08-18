@@ -45,8 +45,6 @@ class ContactsViewController: UIViewController {
         tableView.reloadSections(sections, withRowAnimation: UITableViewRowAnimation.Automatic)
     }
     
-
-    
 }
 
 extension TableViewHandling: UITableViewDataSource, UITableViewDelegate {
